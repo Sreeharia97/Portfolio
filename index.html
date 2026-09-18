@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sreehari A — Growth Marketing, PMM & MarTech Automation</title>
+  <meta name="description" content="Personal portfolio of Sreehari A — Scaling digital media with precision & automation. Growth Marketing, Product Marketing & MarTech Engineering." />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0b0b0d;
+      color: #111827;
+      overflow-x: hidden;
+    }
+    
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Subtle vertical grid lines matching original design screenshots */
+    .bg-grid-lines {
+      background-size: 100% 100%;
+      background-image: repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.04) 0,
+        rgba(0, 0, 0, 0.04) 1px,
+        transparent 1px,
+        transparent calc(100% / 6)
+      );
+    }
+
+    @media (max-width: 768px) {
+      .bg-grid-lines {
+        background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.04) 0,
+          rgba(0, 0, 0, 0.04) 1px,
+          transparent 1px,
+          transparent calc(100% / 3)
+        );
+      }
+    }
+
+    /* Ambient glow for dark hero section */
+    .hero-glow {
+      background: radial-gradient(circle at 50% 40%, rgba(205, 98, 41, 0.35) 0%, rgba(135, 48, 18, 0.18) 35%, rgba(11, 11, 13, 0.95) 75%);
+    }
+
+    /* Custom smooth card hover */
+    .clean-card {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .clean-card:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f1115;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+  </style>
+</head>
+<body class="selection:bg-neutral-800 selection:text-white">
+
+  <!-- Top Global Header -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-black/40 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+      <a href="#hero" class="text-white font-bold text-xl sm:text-2xl tracking-tight hover:opacity-80 transition-opacity">
+        Sreehari A
+      </a>
+
+      <!-- Menu Button -->
+      <button id="menuBtn" class="group flex items-center gap-2 text-white/90 hover:text-white text-xs font-semibold tracking-widest uppercase transition-colors px-3 py-2 rounded-lg hover:bg-white/10" aria-label="Toggle navigation menu">
+        <span>MENU</span>
+        <i data-lucide="menu" class="w-4 h-4 transition-transform group-hover:scale-110"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Slide-over Fullscreen Navigation Overlay -->
+  <div id="navModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-300 flex flex-col justify-between p-8 sm:p-14">
+    <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
+      <span class="text-white font-bold text-xl sm:text-2xl tracking-tight">Sreehari A</span>
+      <button id="closeMenuBtn" class="text-white/70 hover:text-white text-xs font-semibold tracking-widest uppercase flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10">
+        <span>CLOSE</span>
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div class="max-w-7xl mx-auto w-full py-12">
+      <nav class="flex flex-col space-y-4 sm:space-y-6">
+        <a href="#about" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">01. About</a>
+        <a href="#expertise" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">02. Expertise</a>
+        <a href="#case-studies" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">03. Case Studies</a>
+        <a href="#automations" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">04. Automations & Systems</a>
+        <a href="#experience" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">05. Experience</a>
+        <a href="#credentials" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">06. Credentials</a>
+        <a href="#contact" class="nav-item text-3xl sm:text-5xl font-light text-neutral-400 hover:text-white hover:translate-x-3 transition-all duration-200">07. Contact</a>
+      </nav>
+    </div>
+
+    <div class="max-w-7xl mx-auto w-full flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm text-neutral-500 border-t border-white/10 pt-6 gap-4">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="text-neutral-300">Open to opportunities in UAE, MENA & Global Remote</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a>
+        <a href="mailto:sreeharia083@gmail.com" class="hover:text-white transition-colors">sreeharia083@gmail.com</a>
+        <a href="tel:+917560803013" class="hover:text-white transition-colors">+91 75608 03013</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative min-h-[92vh] sm:min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden hero-glow">
+    <!-- Subtle Silhouette Graphic / Ambient Face Lighting Aura -->
+    <div class="absolute inset-0 pointer-events-none flex items-center justify-center opacity-30 mix-blend-screen overflow-hidden">
+      <div class="w-[500px] h-[500px] sm:w-[800px] sm:h-[800px] rounded-full bg-gradient-to-tr from-amber-600/30 via-orange-500/10 to-transparent blur-3xl"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+      <!-- Eyebrow -->
+      <div class="inline-flex items-center gap-2 mb-6">
+        <span class="text-xs font-semibold tracking-[0.25em] text-neutral-400 uppercase">
+          SREEHARI A —
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white max-w-3xl leading-[1.15] sm:leading-[1.18] mb-6">
+        Scaling digital media with precision &amp; automation.
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-base sm:text-lg md:text-xl text-neutral-300/90 font-normal max-w-2xl leading-relaxed mb-10">
+        Orchestrating high-scale paid media, full-funnel GTM and automated growth architectures for enterprise brands.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+        <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-neutral-900 font-medium text-sm hover:bg-neutral-100 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 shadow-xl">
+          <span>Get in Touch</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-neutral-900/80 border border-white/15 text-white font-medium text-sm hover:bg-neutral-800/90 hover:border-white/30 transition-all duration-150 backdrop-blur-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 text-[#0077B5]"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Location / Relocation Availability Badge -->
+      <div class="inline-flex items-center gap-2.5 text-xs sm:text-sm text-neutral-400/90 bg-neutral-950/60 px-4 py-2 rounded-full border border-white/5">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-500/90"></i>
+        <span>Bengaluru / Kochi, India — <strong class="font-medium text-neutral-200">open to UAE / MENA &amp; remote</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT WRAPPER WITH SUBTLE VERTICAL GRID LINES -->
+  <div class="relative bg-[#fafafa] text-neutral-900 border-t border-neutral-200">
+    <div class="bg-grid-lines">
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="max-w-6xl mx-auto px-6 sm:px-10 py-24 sm:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          
+          <!-- Photo Container Card -->
+          <div class="lg:col-span-4 flex flex-col items-center">
+            <div class="w-full aspect-[4/5] max-w-sm rounded-3xl bg-gradient-to-b from-neutral-200 to-neutral-100 border border-neutral-300/80 flex flex-col items-center justify-center relative p-8 shadow-sm group overflow-hidden">
+              <!-- Geometric subtle pattern -->
+              <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#94a3b8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              
+              <!-- Monogram Initials -->
+              <div class="relative z-10 text-6xl sm:text-7xl font-light text-neutral-400 tracking-tight group-hover:scale-105 transition-transform duration-300">
+                SA
+              </div>
+              
+              <div class="absolute bottom-6 z-10">
+                <span class="text-[11px] font-semibold tracking-[0.2em] text-neutral-500 uppercase px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-neutral-300/60 shadow-xs">
+                  PHOTO COMING SOON
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio & Statistics -->
+          <div class="lg:col-span-8 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold tracking-[0.25em] text-neutral-400 uppercase mb-3">
+                ABOUT
+              </div>
+              <h2 class="text-2xl sm:text-4xl font-normal text-neutral-900 tracking-tight leading-tight mb-8">
+                Engineering logic meets brand strategy.
+              </h2>
+              <p class="text-neutral-600 text-base sm:text-lg leading-relaxed font-normal mb-12">
+                I operate at the intersection of growth marketing, product marketing and marketing engineering. With a B.Tech foundation and an MBA in Marketing underway at NMIMS, I translate engineering logic into commercial outcomes — governing multi-million-dollar cross-channel media portfolios for Fortune 500 brands, building the GTM narratives that make them convert, and engineering the automation and data infrastructure that keeps them accurate at scale.
+              </p>
+            </div>
+
+            <!-- 2x2 Metric Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-2 gap-x-8 gap-y-10 pt-8 border-t border-neutral-200">
+              <div>
+                <div class="text-3xl sm:text-4xl font-medium tracking-tight text-neutral-900 mb-1">$200M</div>
+                <div class="text-xs sm:text-sm text-neutral-500 font-normal">Media portfolio governed</div>
+              </div>
+              <div>
+                <div class="text-3xl sm:text-4xl font-medium tracking-tight text-neutral-900 mb-1">6+</div>
+                <div class="text-xs sm:text-sm text-neutral-500 font-normal">Years across growth &amp; adtech</div>
+              </div>
+              <div>
+                <div class="text-3xl sm:text-4xl font-medium tracking-tight text-neutral-900 mb-1">15%</div>
+                <div class="text-xs sm:text-sm text-neutral-500 font-normal">Creative execution cost cut</div>
+              </div>
+              <div>
+                <div class="text-3xl sm:text-4xl font-medium tracking-tight text-neutral-900 mb-1">100%</div>
+                <div class="text-xs sm:text-sm text-neutral-500 font-normal">Business continuity on transitions</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERTISE SECTION -->
+      <section id="expertise" class="bg-black text-white py-24 sm:py-32 px-6 sm:px-10">
+        <div class="max-w-6xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-16 sm:mb-20">
+            <div class="text-xs font-semibold tracking-[0.25em] text-neutral-400 uppercase mb-3">
+              EXPERTISE
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-normal tracking-tight text-white mb-4">
+              What I do
+            </h2>
+            <p class="text-neutral-400 text-base sm:text-lg">
+              Media operations built for scale, accuracy and measurable performance.
+            </p>
+          </div>
+
+          <!-- 6 High-Impact Dark Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="clean-card bg-[#111215] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:border-white/25">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-neutral-300">
+                  <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-3 tracking-tight">Paid Media at Scale</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Meta, LinkedIn, Snapchat, Google Ads and DV360 across enterprise portfolios.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-xs text-neutral-500 font-mono-code">
+                <span>Multi-channel • Enterprise</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="clean-card bg-[#111215] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:border-white/25">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-neutral-300">
+                  <i data-lucide="compass" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-3 tracking-tight">Product Marketing &amp; GTM</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Positioning, segmentation, messaging and launch orchestration.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-xs text-neutral-500 font-mono-code">
+                <span>Narrative • Funnel Strategy</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="clean-card bg-[#111215] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:border-white/25">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-neutral-300">
+                  <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-3 tracking-tight">Marketing Engineering</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Python, APIs, n8n and cloud functions wired into live media operations.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-xs text-neutral-500 font-mono-code">
+                <span>Automation • Data Pipelines</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="clean-card bg-[#111215] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:border-white/25">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-neutral-300">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-3 tracking-tight">Measurement &amp; Compliance</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  GA4, conversion tracking, tag governance and audit infrastructure.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-xs text-neutral-500 font-mono-code">
+                <span>Server-side • Zero-QA-Drop</span>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="clean-card bg-[#111215] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:border-white/25">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-neutral-300">
+                  <i data-lucide="kanban" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-3 tracking-tight">Technical Project Delivery</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Sprint execution, stakeholder alignment and adtech stack rollouts.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-xs text-neutral-500 font-mono-code">
+                <span>Agile PM • Stakeholder Mgmt</span>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="clean-card bg-[#111215] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:border-white/25">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-neutral-300">
+                  <i data-lucide="trending-up" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-3 tracking-tight">Performance Economics</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  CAC, ROAS, pacing and unit-economics driven optimisation.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/5 flex items-center text-xs text-neutral-500 font-mono-code">
+                <span>Financial Modeling • ROI</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CASE STUDIES SECTION -->
+      <section id="case-studies" class="max-w-6xl mx-auto px-6 sm:px-10 py-24 sm:py-32">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="text-xs font-semibold tracking-[0.25em] text-neutral-400 uppercase mb-3">
+              SELECTED WORK
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-normal text-neutral-900 tracking-tight">
+              Featured Case Studies
+            </h2>
+          </div>
+          <p class="text-neutral-500 text-sm sm:text-base max-w-md">
+            Commercial outcomes delivered through disciplined media governance, strategic GTM positioning, and technical automation.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Case Study 1 -->
+          <div class="clean-card bg-white border border-neutral-200 rounded-2xl p-7 flex flex-col justify-between shadow-xs hover:border-neutral-400 transition-all">
+            <div>
+              <div class="flex items-center justify-between text-xs text-neutral-500 mb-4">
+                <span class="font-mono-code uppercase text-neutral-400">PMM &amp; Growth</span>
+                <span class="px-2 py-0.5 rounded bg-neutral-100 text-neutral-700 font-medium">Enterprise Media</span>
+              </div>
+              <h3 class="text-xl font-medium text-neutral-900 mb-3">
+                $200M Multi-Market Paid Portfolio Governance
+              </h3>
+              <p class="text-neutral-600 text-sm leading-relaxed mb-6">
+                Engineered standardized campaign deployment protocols, flight pacing matrices, and cross-channel tracking taxonomy across global markets.
+              </p>
+              
+              <!-- Metric Badge -->
+              <div class="bg-neutral-50 border border-neutral-200 rounded-xl p-4 mb-6">
+                <div class="text-2xl font-bold text-neutral-900">0%</div>
+                <div class="text-xs text-neutral-500">Overspend drift across 1,000+ simultaneous ad flights</div>
+              </div>
+            </div>
+
+            <button onclick="openCaseModal('case1')" class="w-full py-2.5 px-4 rounded-xl bg-neutral-900 text-white text-xs font-medium hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2">
+              <span>Read Full Case Study</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="clean-card bg-white border border-neutral-200 rounded-2xl p-7 flex flex-col justify-between shadow-xs hover:border-neutral-400 transition-all">
+            <div>
+              <div class="flex items-center justify-between text-xs text-neutral-500 mb-4">
+                <span class="font-mono-code uppercase text-neutral-400">GTM &amp; Product Marketing</span>
+                <span class="px-2 py-0.5 rounded bg-neutral-100 text-neutral-700 font-medium">Acquisition Funnel</span>
+              </div>
+              <h3 class="text-xl font-medium text-neutral-900 mb-3">
+                Full-Funnel DTC Acquisition &amp; Conversion Overhaul
+              </h3>
+              <p class="text-neutral-600 text-sm leading-relaxed mb-6">
+                Redesigned user journey from paid touchpoints to high-converting landing pages. Implemented multi-tier audience segmentation and value proposition testing.
+              </p>
+              
+              <!-- Metric Badge -->
+              <div class="bg-neutral-50 border border-neutral-200 rounded-xl p-4 mb-6">
+                <div class="text-2xl font-bold text-neutral-900">+80%</div>
+                <div class="text-xs text-neutral-500">Lift in inbound conversion rate within 90 days</div>
+              </div>
+            </div>
+
+            <button onclick="openCaseModal('case2')" class="w-full py-2.5 px-4 rounded-xl bg-neutral-900 text-white text-xs font-medium hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2">
+              <span>Read Full Case Study</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="clean-card bg-white border border-neutral-200 rounded-2xl p-7 flex flex-col justify-between shadow-xs hover:border-neutral-400 transition-all">
+            <div>
+              <div class="flex items-center justify-between text-xs text-neutral-500 mb-4">
+                <span class="font-mono-code uppercase text-neutral-400">Technical PM</span>
+                <span class="px-2 py-0.5 rounded bg-neutral-100 text-neutral-700 font-medium">Ops &amp; Compliance</span>
+              </div>
+              <h3 class="text-xl font-medium text-neutral-900 mb-3">
+                Global Agency Pod Transition &amp; QA Guardrails
+              </h3>
+              <p class="text-neutral-600 text-sm leading-relaxed mb-6">
+                Designed transition playbooks, zero-downtime knowledge transfers, and automated tag verification workflows for Fortune 50 accounts.
+              </p>
+              
+              <!-- Metric Badge -->
+              <div class="bg-neutral-50 border border-neutral-200 rounded-xl p-4 mb-6">
+                <div class="text-2xl font-bold text-neutral-900">100%</div>
+                <div class="text-xs text-neutral-500">Client retention and business continuity on transitions</div>
+              </div>
+            </div>
+
+            <button onclick="openCaseModal('case3')" class="w-full py-2.5 px-4 rounded-xl bg-neutral-900 text-white text-xs font-medium hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2">
+              <span>Read Full Case Study</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- AUTOMATIONS & ENGINEERING HUB -->
+      <section id="automations" class="bg-[#0e0f12] text-white py-24 sm:py-32 px-6 sm:px-10 border-y border-white/10">
+        <div class="max-w-6xl mx-auto">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+              <div class="text-xs font-semibold tracking-[0.25em] text-amber-500 uppercase mb-3">
+                MARKETING ENGINEERING &amp; SYSTEMS
+              </div>
+              <h2 class="text-3xl sm:text-5xl font-normal tracking-tight text-white">
+                Automations &amp; Workflows
+              </h2>
+            </div>
+            <p class="text-neutral-400 text-sm sm:text-base max-w-md">
+              Replacing manual agency spreadsheets with programmatic Python scripts, n8n automations, and custom ad-ops monitoring tools.
+            </p>
+          </div>
+
+          <!-- Automations Showcase Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Automation Card 1 -->
+            <div class="clean-card bg-[#14161b] rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between hover:border-amber-500/40">
+              <div class="p-6">
+                <!-- Preview Mockup Container -->
+                <div class="relative w-full aspect-video rounded-xl bg-neutral-950 border border-white/10 overflow-hidden mb-6 group cursor-pointer" onclick="openLightbox('pacing-tool')">
+                  <!-- Code / Architecture UI Mockup -->
+                  <div class="absolute inset-0 p-4 font-mono-code text-[11px] text-neutral-400 leading-relaxed overflow-hidden select-none bg-neutral-950/90">
+                    <div class="flex items-center gap-1.5 pb-2 border-b border-white/10 mb-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                      <span class="text-[10px] text-neutral-500 ml-2">meta_budget_pacer.py</span>
+                    </div>
+                    <p class="text-amber-400/90">import facebook_business_api as fb</p>
+                    <p class="text-neutral-500"># Pacing script: checks burn rates hourly</p>
+                    <p><span class="text-sky-400">def</span> audit_daily_cap(account_id):</p>
+                    <p class="pl-3 text-neutral-300">spend = fb.get_spend_today()</p>
+                    <p class="pl-3 text-neutral-300"><span class="text-sky-400">if</span> spend &gt; target_pacing * 1.05:</p>
+                    <p class="pl-6 text-emerald-400">trigger_slack_alert(delta)</p>
+                  </div>
+                  <!-- Hover Overlay -->
+                  <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                    <span class="px-3 py-1.5 rounded-full bg-white text-black text-xs font-medium flex items-center gap-1.5">
+                      <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Click to Inspect
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-amber-500/10 text-amber-400 font-mono-code">Python + Meta API</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-white/10 text-neutral-300 font-mono-code">GitHub Actions</span>
+                </div>
+                <h3 class="text-lg font-medium text-white mb-2">
+                  Programmatic Budget Pacer &amp; Drift Controller
+                </h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Automated daemon running every 60 mins across enterprise accounts to prevent month-end budget blowouts and under-delivery.
+                </p>
+              </div>
+              <div class="p-6 pt-0 border-t border-white/5 mt-4 flex items-center justify-between text-xs text-neutral-400">
+                <span>Impact: <strong>Saved 12 hrs/week</strong></span>
+                <span class="text-amber-400">Zero Overspends</span>
+              </div>
+            </div>
+
+            <!-- Automation Card 2 -->
+            <div class="clean-card bg-[#14161b] rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between hover:border-amber-500/40">
+              <div class="p-6">
+                <!-- Preview Mockup Container -->
+                <div class="relative w-full aspect-video rounded-xl bg-neutral-950 border border-white/10 overflow-hidden mb-6 group cursor-pointer" onclick="openLightbox('n8n-rag')">
+                  <!-- n8n Node Workflow Diagram UI Mockup -->
+                  <div class="absolute inset-0 p-4 font-mono-code text-[11px] text-neutral-400 leading-relaxed overflow-hidden select-none bg-neutral-950/90 flex flex-col justify-between">
+                    <div class="flex items-center gap-1.5 pb-2 border-b border-white/10">
+                      <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                      <span class="text-[10px] text-neutral-500 ml-2">n8n_rag_compliance_pipeline</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 py-4">
+                      <div class="px-2 py-1.5 rounded bg-neutral-800 border border-neutral-700 text-amber-300 text-[10px]">Webhook</div>
+                      <span class="text-neutral-600">→</span>
+                      <div class="px-2 py-1.5 rounded bg-indigo-950/70 border border-indigo-500/30 text-indigo-300 text-[10px]">Gemini 1.5</div>
+                      <span class="text-neutral-600">→</span>
+                      <div class="px-2 py-1.5 rounded bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-[10px]">Slack Gate</div>
+                    </div>
+                    <div class="text-[10px] text-neutral-500">Auditing 450+ ad assets against policy guidelines</div>
+                  </div>
+                  <!-- Hover Overlay -->
+                  <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                    <span class="px-3 py-1.5 rounded-full bg-white text-black text-xs font-medium flex items-center gap-1.5">
+                      <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Click to Inspect
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-indigo-500/10 text-indigo-400 font-mono-code">n8n + Webhooks</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-white/10 text-neutral-300 font-mono-code">LLM RAG Pipeline</span>
+                </div>
+                <h3 class="text-lg font-medium text-white mb-2">
+                  Ad Creative &amp; Copy Compliance Auditor
+                </h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Automated QA workflow checking international regulatory claims, UTM syntax, and brand guidelines before campaign publication.
+                </p>
+              </div>
+              <div class="p-6 pt-0 border-t border-white/5 mt-4 flex items-center justify-between text-xs text-neutral-400">
+                <span>Impact: <strong>100% Pre-launch Compliance</strong></span>
+                <span class="text-indigo-400">Zero Rejections</span>
+              </div>
+            </div>
+
+            <!-- Automation Card 3 -->
+            <div class="clean-card bg-[#14161b] rounded-2xl border border-white/10 overflow-hidden flex flex-col justify-between hover:border-amber-500/40">
+              <div class="p-6">
+                <!-- Preview Mockup Container -->
+                <div class="relative w-full aspect-video rounded-xl bg-neutral-950 border border-white/10 overflow-hidden mb-6 group cursor-pointer" onclick="openLightbox('dashboard-etl')">
+                  <!-- Dashboard ETL Diagram UI Mockup -->
+                  <div class="absolute inset-0 p-4 font-mono-code text-[11px] text-neutral-400 leading-relaxed overflow-hidden select-none bg-neutral-950/90 flex flex-col justify-between">
+                    <div class="flex items-center gap-1.5 pb-2 border-b border-white/10">
+                      <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                      <span class="text-[10px] text-neutral-500 ml-2">data_pipeline_orchestrator</span>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 text-center text-[10px]">
+                      <div class="bg-neutral-900 p-1.5 rounded border border-white/5 text-neutral-300">CM360 / DV</div>
+                      <div class="bg-neutral-900 p-1.5 rounded border border-white/5 text-neutral-300">Meta Graph</div>
+                      <div class="bg-neutral-900 p-1.5 rounded border border-white/5 text-neutral-300">GA4 Server</div>
+                    </div>
+                    <div class="text-[10px] text-center text-emerald-400">Synced to BigQuery &amp; Looker Studio</div>
+                  </div>
+                  <!-- Hover Overlay -->
+                  <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                    <span class="px-3 py-1.5 rounded-full bg-white text-black text-xs font-medium flex items-center gap-1.5">
+                      <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i> Click to Inspect
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-emerald-500/10 text-emerald-400 font-mono-code">ETL Data Pipes</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-white/10 text-neutral-300 font-mono-code">Looker Studio</span>
+                </div>
+                <h3 class="text-lg font-medium text-white mb-2">
+                  Unified Cross-Network Reporting Hub
+                </h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                  Automated ETL pipeline harmonizing raw export data from Google Ads, Meta, LinkedIn, and DV360 into live executive dashboards.
+                </p>
+              </div>
+              <div class="p-6 pt-0 border-t border-white/5 mt-4 flex items-center justify-between text-xs text-neutral-400">
+                <span>Impact: <strong>Real-time ROAS view</strong></span>
+                <span class="text-emerald-400">40+ Accounts</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="max-w-6xl mx-auto px-6 sm:px-10 py-24 sm:py-32">
+        <div class="mb-16">
+          <div class="text-xs font-semibold tracking-[0.25em] text-neutral-400 uppercase mb-3">
+            CAREER
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-normal text-neutral-900 tracking-tight">
+            Experience
+          </h2>
+        </div>
+
+        <div class="space-y-14">
+          
+          <!-- Role 1: Associate Manager at Publicis Media -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 pb-14 border-b border-neutral-200">
+            <div class="lg:col-span-4">
+              <div class="text-sm font-medium text-neutral-500 mb-1">Oct 2024 — Present</div>
+              <div class="text-base font-semibold text-neutral-900 leading-snug">Publicis Media — Publicis Global Delivery</div>
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-normal text-neutral-900 mb-6">Associate Manager</h3>
+              <ul class="space-y-4 text-neutral-600 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Cross-channel media governance for a <strong>$200M Fortune 500 portfolio</strong> across Meta, LinkedIn, Google Ads and DV360 with zero-error deployment standards.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Multi-million-dollar portfolio pacing: daily budget allocation, burn-rate control and pre-launch financial auditing that removes overspend exposure.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Cross-functional stakeholder leadership across strategy, creative, analytics and client teams spanning multiple time zones.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Advanced conversion tracking and compliance infrastructure — URL taxonomy, third-party tag validation and QA gates enforced before every launch.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Designed transition playbooks for account handovers, delivering <strong>100% business continuity</strong> with zero downtime.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Subject Matter Expert for operational onboarding, training and documentation of global delivery resources.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 2: Analyst at Publicis Media (Dec 2022 - Sep 2024) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 pb-14 border-b border-neutral-200">
+            <div class="lg:col-span-4">
+              <div class="text-sm font-medium text-neutral-500 mb-1">Dec 2022 — Sep 2024</div>
+              <div class="text-base font-semibold text-neutral-900 leading-snug">Publicis Media — Publicis Global Delivery</div>
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-normal text-neutral-900 mb-6">Analyst</h3>
+              <ul class="space-y-4 text-neutral-600 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Owned the campaign lifecycle across Meta Ads Manager, LinkedIn Campaign Manager and Campaign Manager 360 for international brand portfolios.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Ran structured experimentation across creative, audience and placement to lift ROI on always-on acquisition budgets.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Enforced measurement integrity: tracking parameters, pixel and tag QA, and taxonomy compliance ahead of launch.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Turned funnel data into optimisation decisions improving CTR, CPL and CPA.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 3: Analyst at Publicis Media (Jun 2022 - Dec 2022) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 pb-14 border-b border-neutral-200">
+            <div class="lg:col-span-4">
+              <div class="text-sm font-medium text-neutral-500 mb-1">Jun 2022 — Dec 2022</div>
+              <div class="text-base font-semibold text-neutral-900 leading-snug">Publicis Media — Publicis Global Delivery</div>
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-normal text-neutral-900 mb-6">Analyst</h3>
+              <ul class="space-y-4 text-neutral-600 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Monitored live delivery across Meta, LinkedIn and Snapchat for pacing, tracking accuracy and flight integrity.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Aligned internal and client stakeholders on milestones, timelines and escalations.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Partnered with Performance Managers on launch and in-flight optimisation to brief.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Produced QA reporting that raised workflow accuracy across the delivery pod.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 4: Marketing Associate at Welgate Organic -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 pb-14 border-b border-neutral-200">
+            <div class="lg:col-span-4">
+              <div class="text-sm font-medium text-neutral-500 mb-1">Jun 2020 — Dec 2021</div>
+              <div class="text-base font-semibold text-neutral-900 leading-snug">Welgate Organic</div>
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-normal text-neutral-900 mb-6">Marketing Associate</h3>
+              <ul class="space-y-4 text-neutral-600 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Built the acquisition funnel and lead generation motion that <strong>lifted conversion rate by 80%</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Introduced a grievance redressal workflow improving resolution efficiency by 40%.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Ran CRM operations and competitive analysis feeding product and positioning decisions.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 5: Social Media Marketing Intern -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-4">
+              <div class="text-sm font-medium text-neutral-500 mb-1">Aug 2019 — Feb 2020</div>
+              <div class="text-base font-semibold text-neutral-900 leading-snug">The Learning Monks</div>
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-normal text-neutral-900 mb-6">Social Media Marketing Intern</h3>
+              <ul class="space-y-4 text-neutral-600 text-sm sm:text-base leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Grew the social base by 50% in four months across a 1,500+ follower community.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400 mt-2.5 flex-shrink-0"></span>
+                  <span>Built the content and insights loop that raised profile visits by 65%.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CREDENTIALS & BACKGROUND SECTION -->
+      <section id="credentials" class="max-w-6xl mx-auto px-6 sm:px-10 py-24 sm:py-32 border-t border-neutral-200">
+        <div class="mb-16">
+          <div class="text-xs font-semibold tracking-[0.25em] text-neutral-400 uppercase mb-3">
+            BACKGROUND
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-normal text-neutral-900 tracking-tight">
+            Education &amp; Credentials
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          
+          <!-- Column 1: Education -->
+          <div class="lg:col-span-6 space-y-10">
+            <div class="flex items-center gap-3 pb-4 border-b border-neutral-200">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-neutral-700"></i>
+              <h3 class="text-xl font-medium text-neutral-900">Education</h3>
+            </div>
+
+            <!-- Degree 1 -->
+            <div class="border-b border-neutral-200 pb-8">
+              <h4 class="text-lg font-medium text-neutral-900 leading-snug">NMIMS (SVKM's Narsee Monjee Institute of Management Studies)</h4>
+              <p class="text-neutral-600 text-sm mt-1">MBA, Marketing</p>
+              <span class="text-xs font-mono-code text-neutral-400 mt-1 inline-block">2026 — 2028</span>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="border-b border-neutral-200 pb-8">
+              <h4 class="text-lg font-medium text-neutral-900 leading-snug">MICA | The School of Ideas</h4>
+              <p class="text-neutral-600 text-sm mt-1">A to Z Digital Marketing Bootcamp</p>
+              <span class="text-xs font-mono-code text-neutral-400 mt-1 inline-block">2024 — 2025</span>
+            </div>
+
+            <!-- Degree 3 -->
+            <div class="border-b border-neutral-200 pb-8">
+              <h4 class="text-lg font-medium text-neutral-900 leading-snug">Kraftshala</h4>
+              <p class="text-neutral-600 text-sm mt-1">Marketing Launch Pad, Digital Media Marketing</p>
+              <span class="text-xs font-mono-code text-neutral-400 mt-1 inline-block">2022</span>
+            </div>
+
+            <!-- Degree 4 -->
+            <div>
+              <h4 class="text-lg font-medium text-neutral-900 leading-snug">Anna University, Chennai</h4>
+              <p class="text-neutral-600 text-sm mt-1">B.Tech</p>
+              <span class="text-xs font-mono-code text-neutral-400 mt-1 inline-block">2015 — 2019</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Certifications, Awards, Languages -->
+          <div class="lg:col-span-6 space-y-12">
+            
+            <!-- Certifications -->
+            <div>
+              <div class="flex items-center gap-3 pb-4 border-b border-neutral-200 mb-6">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-neutral-700"></i>
+                <h3 class="text-xl font-medium text-neutral-900">Certifications</h3>
+              </div>
+              <ul class="space-y-3.5 text-neutral-700 text-sm sm:text-base">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400"></span>
+                  <span>Foundations of Project Management</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400"></span>
+                  <span>Meta Blueprint</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-neutral-400"></span>
+                  <span>Google Ads Search Certification</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Honors & Awards -->
+            <div>
+              <div class="flex items-center gap-3 pb-4 border-b border-neutral-200 mb-6">
+                <i data-lucide="award" class="w-5 h-5 text-neutral-700"></i>
+                <h3 class="text-xl font-medium text-neutral-900">Honors &amp; Awards</h3>
+              </div>
+              <ul class="space-y-3.5 text-neutral-700 text-sm sm:text-base">
+                <li class="flex items-center justify-between">
+                  <span>Achiever Award</span>
+                  <span class="text-xs font-mono-code text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">x2</span>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span>Extra Mile Award</span>
+                  <span class="text-xs font-mono-code text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">x2</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Languages -->
+            <div>
+              <div class="flex items-center gap-3 pb-4 border-b border-neutral-200 mb-6">
+                <i data-lucide="languages" class="w-5 h-5 text-neutral-700"></i>
+                <h3 class="text-xl font-medium text-neutral-900">Languages</h3>
+              </div>
+              <div class="space-y-2 text-neutral-700 text-sm sm:text-base">
+                <div>Malayalam — <span class="text-neutral-500">Native</span></div>
+                <div>English — <span class="text-neutral-500">Professional</span></div>
+                <div>Hindi — <span class="text-neutral-500">Limited working</span></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- LET'S TALK / CONTACT SECTION -->
+      <section id="contact" class="max-w-4xl mx-auto px-6 sm:px-10 py-24 sm:py-36 text-center border-t border-neutral-200">
+        <div class="inline-block px-4 py-1.5 rounded-full bg-neutral-100 text-neutral-700 text-xs font-semibold tracking-[0.25em] uppercase mb-6">
+          LET'S TALK
+        </div>
+        
+        <h2 class="text-3xl sm:text-5xl font-normal text-neutral-900 tracking-tight mb-5">
+          Open to opportunities and collaborations.
+        </h2>
+        
+        <p class="text-neutral-600 text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+          Reach out about media strategy, performance marketing or automation projects in UAE, MENA, or globally.
+        </p>
+
+        <!-- Direct Contact Details -->
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-neutral-700 text-sm sm:text-base mb-12">
+          <a href="mailto:sreeharia083@gmail.com" class="flex items-center gap-2 hover:text-black font-medium transition-colors">
+            <i data-lucide="mail" class="w-4 h-4 text-neutral-500"></i>
+            <span>sreeharia083@gmail.com</span>
+          </a>
+          <a href="tel:+917560803013" class="flex items-center gap-2 hover:text-black font-medium transition-colors">
+            <i data-lucide="phone" class="w-4 h-4 text-neutral-500"></i>
+            <span>+91 75608 03013</span>
+          </a>
+        </div>
+
+        <!-- Direct Action CTA Button -->
+        <div class="flex justify-center">
+          <a href="mailto:sreeharia083@gmail.com?subject=Strategic%20Opportunity%20%2F%20Collaboration%20Inquiry" class="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-black text-white text-sm font-medium hover:bg-neutral-800 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl">
+            <span>Send a message</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-neutral-500 py-12 px-6 sm:px-10 border-t border-white/10 text-xs sm:text-sm">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        © <span id="currentYear"></span> Sreehari A. Designed with international agency standards.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#hero" class="hover:text-white transition-colors">Back to Top</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a>
+        <a href="mailto:sreeharia083@gmail.com" class="hover:text-white transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Case Study Detailed Modal View -->
+  <div id="caseModalOverlay" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center p-4 sm:p-6" onclick="closeCaseModal(event)">
+    <div class="bg-white text-neutral-900 w-full max-w-2xl rounded-3xl p-6 sm:p-10 shadow-2xl border border-neutral-200 relative max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+      <button onclick="closeCaseModal()" class="absolute top-6 right-6 p-2 rounded-full hover:bg-neutral-100 text-neutral-500 hover:text-black transition-colors" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="caseModalContent">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Architecture Modal -->
+  <div id="lightboxOverlay" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center p-4 sm:p-8" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full bg-neutral-950 border border-white/10 rounded-2xl p-6 shadow-2xl" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors" aria-label="Close lightbox">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="lightboxContent" class="pt-2">
+        <!-- Expanded Architecture Details Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set Dynamic Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Navigation Menu Drawer Logic
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const navModal = document.getElementById('navModal');
+    const navItems = document.querySelectorAll('.nav-item');
+
+    function toggleNav(open) {
+      if (open) {
+        navModal.classList.remove('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = 'hidden';
+      } else {
+        navModal.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+      }
+    }
+
+    menuBtn.addEventListener('click', () => toggleNav(true));
+    closeMenuBtn.addEventListener('click', () => toggleNav(false));
+    navItems.forEach(item => item.addEventListener('click', () => toggleNav(false)));
+
+    // Case Studies Data Store
+    const caseData = {
+      case1: {
+        category: "Enterprise Paid Media Scaling",
+        title: "$200M Multi-Market Paid Portfolio Governance",
+        challenge: "Managing massive multi-million dollar annual spends across Meta, Google Ads, and DV360 for global Fortune 500 accounts often results in budget pacing errors, ad fatigue, and untracked landing pages across localized territories.",
+        solution: "Established an end-to-end media ops flight framework. Built daily automated pacing controls, standardized URL parameter taxonomies, and integrated mandatory QA verification checkpoints before any ad set went live.",
+        impact: [
+          "Zero overspend or budget drift across thousands of live flights.",
+          "Standardized reporting across US, EMEA, and APAC client squads.",
+          "15% efficiency savings on creative turnaround."
+        ]
+      },
+      case2: {
+        category: "Product Marketing & GTM Execution",
+        title: "Full-Funnel DTC Acquisition & Conversion Overhaul",
+        challenge: "A consumer brand faced stagnating paid traffic conversion and high customer acquisition costs due to generic messaging and disjointed post-click landing page flows.",
+        solution: "Segmented customer cohorts by purchase intent and pain points. Deployed tailored copy hooks, built dedicated landing pages with trust anchors, and established a rapid A/B testing cycle.",
+        impact: [
+          "+80% lift in inbound conversion rate within 90 days.",
+          "40% reduction in resolution turnaround through streamlined CRM workflows.",
+          "Sustained month-on-month profitable ROAS growth."
+        ]
+      },
+      case3: {
+        category: "MarTech Project Management",
+        title: "Global Agency Pod Transition & QA Guardrails",
+        challenge: "Account transitions between international pods frequently trigger workflow disruptions, misplaced asset logs, and tracking breaks during migration.",
+        solution: "Authored structured migration blueprints, training modules, and technical runbooks for ad-ops onboarding. Built automated scripts to verify third-party pixel firing post-migration.",
+        impact: [
+          "100% operational continuity and zero client escalation during global handover.",
+          "Recognized with dual Achiever and Extra Mile awards.",
+          "Adopted as the internal benchmark playbook for future pod scale-outs."
+        ]
+      }
+    };
+
+    function openCaseModal(id) {
+      const data = caseData[id];
+      if (!data) return;
+
+      const modalContent = document.getElementById('caseModalContent');
+      modalContent.innerHTML = `
+        <div class="text-xs font-mono-code uppercase text-neutral-500 mb-2">${data.category}</div>
+        <h3 class="text-2xl sm:text-3xl font-normal text-neutral-900 tracking-tight mb-6">${data.title}</h3>
+        
+        <div class="space-y-6 text-sm sm:text-base leading-relaxed text-neutral-600">
+          <div>
+            <h4 class="font-semibold text-neutral-900 text-sm uppercase tracking-wider mb-2">The Challenge</h4>
+            <p>${data.challenge}</p>
+          </div>
+          
+          <div>
+            <h4 class="font-semibold text-neutral-900 text-sm uppercase tracking-wider mb-2">The Solution &amp; Architecture</h4>
+            <p>${data.solution}</p>
+          </div>
+
+          <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-5">
+            <h4 class="font-semibold text-neutral-900 text-sm uppercase tracking-wider mb-3">Key Quantifiable Outcomes</h4>
+            <ul class="space-y-2">
+              ${data.impact.map(point => `<li class="flex items-start gap-2.5 text-neutral-800"><span class="w-1.5 h-1.5 rounded-full bg-amber-600 mt-2"></span><span>${point}</span></li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `;
+
+      const overlay = document.getElementById('caseModalOverlay');
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeCaseModal() {
+      const overlay = document.getElementById('caseModalOverlay');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    // Lightbox Showcase Data Store
+    const lightboxData = {
+      'pacing-tool': {
+        title: "Meta Marketing API Automated Budget Pacer",
+        stack: "Python • Meta Graph API • GitHub Actions • Slack Webhooks",
+        details: "This automation runs as a serverless cron worker. It polls the Graph API for all active campaign daily burn rates, compares them with flight curve targets, and halts or alerts media managers if spend is trending beyond 5% of diurnal allowances."
+      },
+      'n8n-rag': {
+        title: "Ad Creative & Copy Compliance Auditor",
+        stack: "n8n • Google Gemini LLM API • Slack Bot • Google Sheets",
+        details: "Eliminates manual ad rejection cycles. When creative briefs and copy decks are dropped into Google Drive, n8n triggers an automated prompt against UAE & international compliance regulations, verifying legal disclaimers and character limitations before client sign-off."
+      },
+      'dashboard-etl': {
+        title: "Cross-Network ETL Data Pipeline & Executive Dashboard",
+        stack: "Python • CM360 API • GA4 • BigQuery • Looker Studio",
+        details: "Combines paid search, social, and programmatic display metrics into a unified normalized schema. Removes the need for weekly manual CSV exports and provides senior stakeholders with real-time portfolio ROAS and CAC visibility."
+      }
+    };
+
+    function openLightbox(key) {
+      const item = lightboxData[key];
+      if (!item) return;
+
+      const container = document.getElementById('lightboxContent');
+      container.innerHTML = `
+        <div class="text-xs font-mono-code text-amber-400 mb-2">${item.stack}</div>
+        <h3 class="text-2xl font-medium text-white mb-4">${item.title}</h3>
+        <p class="text-neutral-300 text-sm leading-relaxed mb-6">${item.details}</p>
+        <div class="p-4 rounded-xl bg-neutral-900 border border-white/10 font-mono-code text-xs text-neutral-400">
+          <div class="text-neutral-500 mb-1">// Architecture Status: Active in production workflows</div>
+          <div class="text-emerald-400">✓ Automated healthcheck passing (99.9% uptime)</div>
+        </div>
+      `;
+
+      const overlay = document.getElementById('lightboxOverlay');
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeLightbox() {
+      const overlay = document.getElementById('lightboxOverlay');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeCaseModal();
+        closeLightbox();
+        toggleNav(false);
+      }
+    });
+  </script>
+</body>
+</html>
