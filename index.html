@@ -4,13 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sreehari A — Brand, Growth & Marketing Operations Lead</title>
-  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     tailwind.config = {
@@ -49,7 +46,6 @@
     }
   </script>
   <style>
-    /* Architectural vertical background grid guidelines */
     .grid-lines-light {
       background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px);
       background-size: calc(100% / 6) 100%;
@@ -58,7 +54,6 @@
       background-image: linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px);
       background-size: calc(100% / 6) 100%;
     }
-    /* Infinite logo ticker pause on hover */
     .marquee-container:hover .marquee-content {
       animation-play-state: paused;
     }
@@ -66,9 +61,7 @@
 </head>
 <body class="bg-[#0a0a0c] text-neutral-100 font-sans antialiased selection:bg-neutral-700 selection:text-white">
 
-  <!-- =========================================================================
-       GLOBAL NAVIGATION BAR & SLIDE-OUT DRAWER
-       ========================================================================= -->
+  <!-- GLOBAL NAVIGATION BAR & SLIDE-OUT DRAWER -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-[#0c0c0e]/85 backdrop-blur-md border-b border-neutral-800/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#hero" class="text-xl font-bold tracking-tight text-white hover:opacity-90 transition">
@@ -129,15 +122,12 @@
 
       <div class="pt-8 border-t border-neutral-800 space-y-2 text-xs text-neutral-400">
         <p>Available for India, UAE, APAC & Global Roles</p>
-        <p class="font-mono text-neutral-500">sreeharia083@gmail.com</p>
+        <p class="font-mono text-neutral-500">sreeharia04@gmail.com</p>
       </div>
     </div>
   </div>
 
-
-  <!-- =========================================================================
-       HERO SECTION (CLEAN DARK ATMOSPHERIC AMBIENCE)
-       ========================================================================= -->
+  <!-- HERO SECTION -->
   <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#0a0a0c]">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_35%_45%,rgba(168,75,40,0.22)_0%,rgba(18,18,22,0.95)_65%,#0a0a0c_100%)] pointer-events-none"></div>
     <div class="absolute inset-0 grid-lines-dark pointer-events-none"></div>
@@ -162,7 +152,6 @@
         </a>
       </div>
 
-      <!-- Updated Open to Work Section including India & Linked Profile -->
       <div class="mt-12 inline-flex items-center gap-2 text-xs sm:text-sm text-neutral-400 bg-neutral-900/60 border border-neutral-800/80 px-4 py-2 rounded-full">
         <i data-lucide="compass" class="w-3.5 h-3.5 text-neutral-400"></i>
         <span>Open to Opportunities in India, UAE / MENA & Enterprise Remote</span>
@@ -170,10 +159,7 @@
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       CLIENTS & PLATFORMS TICKER (INFINITE MOTION GRAPHICS CAROUSEL)
-       ========================================================================= -->
+  <!-- CLIENTS TICKER -->
   <section id="clients" class="relative bg-[#0d0d11] py-14 border-y border-neutral-800/80 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 mb-6 text-center">
       <p class="text-[11px] uppercase tracking-[0.3em] text-neutral-400 font-mono font-medium">
@@ -181,15 +167,11 @@
       </p>
     </div>
 
-    <!-- Gradient Edge Masks for Smooth Visual Flow -->
     <div class="relative w-full overflow-hidden marquee-container">
       <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0d0d11] to-transparent z-10 pointer-events-none"></div>
       <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0d0d11] to-transparent z-10 pointer-events-none"></div>
 
-      <!-- Moving Track with Two Identical Sets for Seamless Infinite Loop -->
       <div class="flex w-max animate-infinite-scroll marquee-content items-center space-x-12 sm:space-x-16">
-        
-        <!-- Track 1 -->
         <div class="flex items-center space-x-12 sm:space-x-16">
           <span class="text-xl sm:text-2xl font-bold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Verizon</span>
           <span class="text-xl sm:text-2xl font-semibold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Ogilvy</span>
@@ -202,7 +184,6 @@
           <span class="text-xl sm:text-2xl font-bold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Pinterest</span>
         </div>
 
-        <!-- Track 2 (Duplicate for Seamless Loop) -->
         <div class="flex items-center space-x-12 sm:space-x-16">
           <span class="text-xl sm:text-2xl font-bold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Verizon</span>
           <span class="text-xl sm:text-2xl font-semibold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Ogilvy</span>
@@ -214,28 +195,32 @@
           <span class="text-xl sm:text-2xl font-semibold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Twitter</span>
           <span class="text-xl sm:text-2xl font-bold tracking-tight text-neutral-400 hover:text-white transition duration-200 cursor-default">Pinterest</span>
         </div>
-
       </div>
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       ABOUT SECTION (LIGHT THEME)
-       ========================================================================= -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="relative bg-[#fafafa] text-neutral-900 py-24 border-t border-neutral-200">
     <div class="absolute inset-0 grid-lines-light pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         
-        <!-- Left: Photo/Monogram Container Card -->
+        <!-- Left: Photo Container Card -->
         <div class="lg:col-span-5 flex justify-center lg:justify-start">
-          <div class="w-full max-w-md aspect-[4/5] bg-neutral-200/70 border border-neutral-300/80 rounded-3xl flex flex-col items-center justify-center relative p-8 shadow-sm">
-            <span class="text-7xl font-bold tracking-tight text-neutral-400 font-sans select-none">SA</span>
-            <span class="absolute bottom-8 text-xs tracking-widest uppercase font-mono text-neutral-500 font-medium">
-              Sreehari A — Portfolio
-            </span>
+          <div class="w-full max-w-md aspect-[4/5] bg-neutral-200/70 border border-neutral-300/80 rounded-3xl overflow-hidden relative shadow-sm">
+            <img 
+              src="profile.jpg" 
+              alt="Sreehari A" 
+              class="w-full h-full object-cover object-center"
+              onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';"
+            />
+            <div id="avatar-fallback" class="hidden absolute inset-0 flex flex-col items-center justify-center bg-neutral-200/70">
+              <span class="text-7xl font-bold tracking-tight text-neutral-400 select-none">SA</span>
+              <span class="absolute bottom-8 text-xs tracking-widest uppercase font-mono text-neutral-500 font-medium">
+                Sreehari A — Portfolio
+              </span>
+            </div>
           </div>
         </div>
 
@@ -250,30 +235,29 @@
 
           <div class="space-y-4 text-neutral-700 text-base sm:text-lg leading-relaxed font-normal">
             <p>
-              I operate at the intersection of brand management, product marketing, and marketing engineering. With a B.Tech foundation and an MBA in Marketing underway at NMIMS, I translate quantitative logic into commercial outcomes—governing multi-million-dollar cross-channel media portfolios for Fortune 500 brands, building the GTM narratives that make them convert, and engineering the automation and data infrastructure that keeps them accurate at scale[cite: 2].
+              I operate at the intersection of brand management, product marketing, and marketing engineering. With a B.Tech foundation and an MBA in Marketing underway at NMIMS, I translate quantitative logic into commercial outcomes—governing multi-million-dollar cross-channel media portfolios for Fortune 500 brands, building the GTM narratives that make them convert, and engineering the automation and data infrastructure that keeps them accurate at scale.
             </p>
             <p class="text-sm text-neutral-600">
               Experienced in driving cross-channel orchestration across Media, Operations, and Platform Partner teams—acting as a high-velocity operational bridge between global strategy hubs and regional/local execution pods across onshore and offshore ecosystems.
             </p>
           </div>
 
-          <!-- 4 Core Metric Callouts -->
           <div class="grid grid-cols-2 gap-y-8 gap-x-6 pt-6 border-t border-neutral-300">
             <div>
               <div class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 font-sans">$200M</div>
-              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Media portfolio governed[cite: 2]</div>
+              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Media portfolio governed</div>
             </div>
             <div>
               <div class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 font-sans">6+</div>
-              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Years across growth & adtech[cite: 2]</div>
+              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Years across growth & adtech</div>
             </div>
             <div>
               <div class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 font-sans">15%</div>
-              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Creative execution cost cut[cite: 2]</div>
+              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Creative execution cost cut</div>
             </div>
             <div>
               <div class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 font-sans">100%</div>
-              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Business continuity on transitions[cite: 2]</div>
+              <div class="mt-1 text-xs sm:text-sm text-neutral-600 font-medium">Business continuity on transitions</div>
             </div>
           </div>
         </div>
@@ -282,10 +266,7 @@
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       EXPERTISE SECTION ("WHAT I DO" 6 DARK CARDS)
-       ========================================================================= -->
+  <!-- EXPERTISE SECTION -->
   <section id="expertise" class="relative bg-[#0a0a0c] text-neutral-100 py-24 border-t border-neutral-800">
     <div class="absolute inset-0 grid-lines-dark pointer-events-none"></div>
 
@@ -296,62 +277,57 @@
           What I do
         </h2>
         <p class="mt-4 text-base sm:text-lg text-neutral-400 font-normal">
-          Media operations built for scale, accuracy and measurable performance[cite: 3].
+          Media operations built for scale, accuracy and measurable performance.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
         <div class="bg-[#141417] border border-neutral-800/90 rounded-2xl p-8 hover:border-neutral-700 transition duration-300">
           <h3 class="text-xl font-bold text-white tracking-tight">Paid Media at Scale</h3>
           <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            Meta, LinkedIn, Snapchat, Google Ads and DV360 across enterprise portfolios with stringent burn pacing[cite: 3].
+            Meta, LinkedIn, Snapchat, Google Ads and DV360 across enterprise portfolios with stringent burn pacing.
           </p>
         </div>
 
         <div class="bg-[#141417] border border-neutral-800/90 rounded-2xl p-8 hover:border-neutral-700 transition duration-300">
           <h3 class="text-xl font-bold text-white tracking-tight">Product Marketing & GTM</h3>
           <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            Positioning, audience segmentation, 1P/3P asset workstreams, messaging frameworks and launch orchestration[cite: 3].
+            Positioning, audience segmentation, 1P/3P asset workstreams, messaging frameworks and launch orchestration.
           </p>
         </div>
 
         <div class="bg-[#141417] border border-neutral-800/90 rounded-2xl p-8 hover:border-neutral-700 transition duration-300">
           <h3 class="text-xl font-bold text-white tracking-tight">Marketing Engineering</h3>
           <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            Python, APIs, n8n, generative AI compliance engines and cloud functions wired into live media operations[cite: 3].
+            Python, APIs, n8n, generative AI compliance engines and cloud functions wired into live media operations.
           </p>
         </div>
 
         <div class="bg-[#141417] border border-neutral-800/90 rounded-2xl p-8 hover:border-neutral-700 transition duration-300">
           <h3 class="text-xl font-bold text-white tracking-tight">Measurement & Compliance</h3>
           <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            GA4, conversion tracking, automated tag QA gates, URL taxonomy governance and ad compliance audit infrastructure[cite: 3].
+            GA4, conversion tracking, automated tag QA gates, URL taxonomy governance and ad compliance audit infrastructure.
           </p>
         </div>
 
         <div class="bg-[#141417] border border-neutral-800/90 rounded-2xl p-8 hover:border-neutral-700 transition duration-300">
           <h3 class="text-xl font-bold text-white tracking-tight">Technical Project Delivery</h3>
           <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            Sprint execution, cross-market stakeholder alignment, localization reviews, and martech stack rollouts[cite: 3].
+            Sprint execution, cross-market stakeholder alignment, localization reviews, and martech stack rollouts.
           </p>
         </div>
 
         <div class="bg-[#141417] border border-neutral-800/90 rounded-2xl p-8 hover:border-neutral-700 transition duration-300">
           <h3 class="text-xl font-bold text-white tracking-tight">Performance Economics</h3>
           <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            CAC, ROAS, budget pacing and unit-economics driven optimization across global cross-functional pods[cite: 3].
+            CAC, ROAS, budget pacing and unit-economics driven optimization across global cross-functional pods.
           </p>
         </div>
-
       </div>
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       CASE STUDIES SECTION (PROVEN IMPACT MEMOS)
-       ========================================================================= -->
+  <!-- CASE STUDIES SECTION -->
   <section id="case-studies" class="relative bg-[#0d0d10] text-neutral-100 py-24 border-t border-neutral-800">
     <div class="max-w-7xl mx-auto px-6">
       
@@ -372,8 +348,6 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        
-        <!-- Case 1 -->
         <div class="bg-[#131317] border border-neutral-800 rounded-2xl p-7 flex flex-col justify-between hover:border-neutral-700 transition duration-300">
           <div>
             <div class="flex items-center justify-between text-xs font-mono text-neutral-400 mb-4">
@@ -398,7 +372,6 @@
           </button>
         </div>
 
-        <!-- Case 2 -->
         <div class="bg-[#131317] border border-neutral-800 rounded-2xl p-7 flex flex-col justify-between hover:border-neutral-700 transition duration-300">
           <div>
             <div class="flex items-center justify-between text-xs font-mono text-neutral-400 mb-4">
@@ -423,7 +396,6 @@
           </button>
         </div>
 
-        <!-- Case 3 -->
         <div class="bg-[#131317] border border-neutral-800 rounded-2xl p-7 flex flex-col justify-between hover:border-neutral-700 transition duration-300">
           <div>
             <div class="flex items-center justify-between text-xs font-mono text-neutral-400 mb-4">
@@ -447,16 +419,11 @@
             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
           </button>
         </div>
-
       </div>
-
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       AUTOMATIONS & SYSTEMS ENGINEERING HUB (WITH SCREENSHOT LIGHTBOX)
-       ========================================================================= -->
+  <!-- AUTOMATIONS HUB -->
   <section id="automations" class="relative bg-[#0a0a0c] text-neutral-100 py-24 border-t border-neutral-800">
     <div class="max-w-7xl mx-auto px-6">
       
@@ -471,8 +438,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- System 1 -->
         <div class="bg-[#121215] border border-neutral-800 rounded-2xl overflow-hidden group hover:border-neutral-700 transition">
           <div class="relative bg-neutral-900 aspect-video border-b border-neutral-800 overflow-hidden cursor-pointer" onclick="openLightbox('Daily Meta Spend Pacing Engine', 'Automated Python orchestration pipeline calculating spend pacing variance against flight days.', 'System Architecture: Meta Graph API ➔ GitHub Actions Cron ➔ Google Cloud Auth ➔ Google Sheets ➔ Slack Alert Webhook.')">
             <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-neutral-900 to-neutral-950">
@@ -497,7 +462,6 @@
           </div>
         </div>
 
-        <!-- System 2 -->
         <div class="bg-[#121215] border border-neutral-800 rounded-2xl overflow-hidden group hover:border-neutral-700 transition">
           <div class="relative bg-neutral-900 aspect-video border-b border-neutral-800 overflow-hidden cursor-pointer" onclick="openLightbox('RAG Ad Copy Compliance Auditor', 'LLM Agent auditing advertising claims and legal copy against local market regulatory criteria.', 'System Architecture: n8n Webhook ➔ Google AI Studio (Gemini Flash) ➔ Pinecone Vector Index ➔ Rule Engine ➔ Auto-approval log.')">
             <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-neutral-900 to-neutral-950">
@@ -522,7 +486,6 @@
           </div>
         </div>
 
-        <!-- System 3 -->
         <div class="bg-[#121215] border border-neutral-800 rounded-2xl overflow-hidden group hover:border-neutral-700 transition">
           <div class="relative bg-neutral-900 aspect-video border-b border-neutral-800 overflow-hidden cursor-pointer" onclick="openLightbox('MarTech UTM Taxonomy Validator', 'Deterministic parser validating tracking parameters and tag health prior to campaign go-live.', 'System Architecture: Google Apps Script + Regex Validator ➔ GA4 Measurement Protocol ➔ CM360 Tag Verification.')">
             <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-neutral-900 to-neutral-950">
@@ -546,16 +509,11 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       EXPERIENCE SECTION (PUBLICIS MEDIA & CAREER TIMELINE)
-       ========================================================================= -->
+  <!-- EXPERIENCE SECTION -->
   <section id="experience" class="relative bg-[#fafafa] text-neutral-900 py-24 border-t border-neutral-200">
     <div class="absolute inset-0 grid-lines-light pointer-events-none"></div>
 
@@ -564,28 +522,28 @@
       <div class="max-w-2xl mb-16">
         <span class="text-xs uppercase tracking-[0.2em] text-neutral-500 font-mono font-medium">CAREER</span>
         <h2 class="mt-2 text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
-          Experience[cite: 4]
+          Experience
         </h2>
       </div>
 
       <div class="space-y-14 border-t border-neutral-300 pt-12">
         
-        <!-- Role 1: Associate Manager at Publicis Media -->
+        <!-- Role 1: Associate Manager -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-4">
-            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Oct 2024 — Present[cite: 4]</span>
-            <h3 class="text-xl font-bold text-neutral-900 mt-1">Associate Manager[cite: 4]</h3>
-            <p class="text-sm text-neutral-600">Publicis Media — Publicis Global Delivery[cite: 4]</p>
+            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Oct 2024 — Present</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Associate Manager</h3>
+            <p class="text-sm text-neutral-600">Publicis Media — Publicis Global Delivery</p>
           </div>
           <div class="lg:col-span-8">
             <ul class="space-y-3.5 text-sm sm:text-base text-neutral-700 leading-relaxed list-disc list-outside ml-4">
-              <li>Cross-channel media governance for a $200M Fortune 500 portfolio across Meta, LinkedIn, Google Ads and DV360 with zero-error deployment standards[cite: 4].</li>
+              <li>Cross-channel media governance for a $200M Fortune 500 portfolio across Meta, LinkedIn, Google Ads and DV360 with zero-error deployment standards.</li>
               <li>Spearhead cross-channel collaboration across Media Strategy, Operations, and Platform Partner representatives (Meta, Google, LinkedIn) to orchestrate smooth campaign launches with zero execution bottlenecks.</li>
               <li>Lead high-velocity stakeholder management across both onshore client leads and offshore delivery pods, managing time-zone handovers, escalations, and campaign flight integrity.</li>
-              <li>Multi-million-dollar portfolio pacing: daily budget allocation, burn-rate control and pre-launch financial auditing that removes overspend exposure[cite: 4].</li>
-              <li>Advanced conversion tracking and compliance infrastructure — URL taxonomy, third-party tag validation and QA gates enforced before every launch[cite: 4].</li>
-              <li>Designed transition playbooks for account handovers, delivering 100% business continuity with zero downtime[cite: 4].</li>
-              <li>Subject Matter Expert for operational onboarding, training and documentation of global delivery resources[cite: 4].</li>
+              <li>Multi-million-dollar portfolio pacing: daily budget allocation, burn-rate control and pre-launch financial auditing that removes overspend exposure.</li>
+              <li>Advanced conversion tracking and compliance infrastructure — URL taxonomy, third-party tag validation and QA gates enforced before every launch.</li>
+              <li>Designed transition playbooks for account handovers, delivering 100% business continuity with zero downtime.</li>
+              <li>Subject Matter Expert for operational onboarding, training and documentation of global delivery resources.</li>
               <li>Lead foundational asset and ways-of-working alignment, creating standardized review loops and authoring weekly brand performance briefs for cross-functional leadership.</li>
             </ul>
           </div>
@@ -593,57 +551,57 @@
 
         <hr class="border-neutral-200">
 
-        <!-- Role 2: Analyst at Publicis Media (Dec 2022 — Sep 2024) -->
+        <!-- Role 2: Analyst -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-4">
-            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Dec 2022 — Sep 2024[cite: 5]</span>
-            <h3 class="text-xl font-bold text-neutral-900 mt-1">Analyst[cite: 5]</h3>
-            <p class="text-sm text-neutral-600">Publicis Media — Publicis Global Delivery[cite: 5]</p>
+            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Dec 2022 — Sep 2024</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Analyst</h3>
+            <p class="text-sm text-neutral-600">Publicis Media — Publicis Global Delivery</p>
           </div>
           <div class="lg:col-span-8">
             <ul class="space-y-3.5 text-sm sm:text-base text-neutral-700 leading-relaxed list-disc list-outside ml-4">
-              <li>Owned the campaign lifecycle across Meta Ads Manager, LinkedIn Campaign Manager and Campaign Manager 360 for international brand portfolios[cite: 5].</li>
+              <li>Owned the campaign lifecycle across Meta Ads Manager, LinkedIn Campaign Manager and Campaign Manager 360 for international brand portfolios.</li>
               <li>Coordinated daily flight updates, technical troubleshooting, and tracking alignment between Media Planners, AdOps engineers, and platform reps across onshore and offshore teams.</li>
-              <li>Ran structured experimentation across creative, audience and placement to lift ROI on always-on acquisition budgets[cite: 5].</li>
-              <li>Enforced measurement integrity: tracking parameters, pixel and tag QA, and taxonomy compliance ahead of launch[cite: 5].</li>
-              <li>Turned funnel data into optimisation decisions improving CTR, CPL and CPA[cite: 5].</li>
+              <li>Ran structured experimentation across creative, audience and placement to lift ROI on always-on acquisition budgets.</li>
+              <li>Enforced measurement integrity: tracking parameters, pixel and tag QA, and taxonomy compliance ahead of launch.</li>
+              <li>Turned funnel data into optimisation decisions improving CTR, CPL and CPA.</li>
             </ul>
           </div>
         </div>
 
         <hr class="border-neutral-200">
 
-        <!-- Role 3: Trainee Analyst at Publicis Media (Jun 2022 — Dec 2022) -->
+        <!-- Role 3: Trainee Analyst -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-4">
-            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Jun 2022 — Dec 2022[cite: 5]</span>
+            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Jun 2022 — Dec 2022</span>
             <h3 class="text-xl font-bold text-neutral-900 mt-1">Trainee Analyst</h3>
-            <p class="text-sm text-neutral-600">Publicis Media — Publicis Global Delivery[cite: 5]</p>
+            <p class="text-sm text-neutral-600">Publicis Media — Publicis Global Delivery</p>
           </div>
           <div class="lg:col-span-8">
             <ul class="space-y-3.5 text-sm sm:text-base text-neutral-700 leading-relaxed list-disc list-outside ml-4">
-              <li>Monitored live delivery across Meta, LinkedIn and Snapchat for pacing, tracking accuracy and flight integrity[cite: 5].</li>
-              <li>Aligned internal and client stakeholders on milestones, timelines and escalations[cite: 5].</li>
-              <li>Partnered with Performance Managers on launch and in-flight optimisation to brief[cite: 5].</li>
-              <li>Produced QA reporting that raised workflow accuracy across the delivery pod[cite: 5].</li>
+              <li>Monitored live delivery across Meta, LinkedIn and Snapchat for pacing, tracking accuracy and flight integrity.</li>
+              <li>Aligned internal and client stakeholders on milestones, timelines and escalations.</li>
+              <li>Partnered with Performance Managers on launch and in-flight optimisation to brief.</li>
+              <li>Produced QA reporting that raised workflow accuracy across the delivery pod.</li>
             </ul>
           </div>
         </div>
 
         <hr class="border-neutral-200">
 
-        <!-- Role 4: Marketing Associate at Welgate Organic -->
+        <!-- Role 4: Marketing Associate -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-4">
-            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Jun 2020 — Dec 2021[cite: 6]</span>
-            <h3 class="text-xl font-bold text-neutral-900 mt-1">Marketing Associate[cite: 6]</h3>
-            <p class="text-sm text-neutral-600">Welgate Organic[cite: 6]</p>
+            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Jun 2020 — Dec 2021</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Marketing Associate</h3>
+            <p class="text-sm text-neutral-600">Welgate Organic</p>
           </div>
           <div class="lg:col-span-8">
             <ul class="space-y-3.5 text-sm sm:text-base text-neutral-700 leading-relaxed list-disc list-outside ml-4">
-              <li>Built the acquisition funnel and lead generation motion that lifted conversion rate by 80%[cite: 6].</li>
-              <li>Introduced a grievance redressal workflow improving resolution efficiency by 40%[cite: 6].</li>
-              <li>Ran CRM operations and competitive analysis feeding product and positioning decisions[cite: 6].</li>
+              <li>Built the acquisition funnel and lead generation motion that lifted conversion rate by 80%.</li>
+              <li>Introduced a grievance redressal workflow improving resolution efficiency by 40%.</li>
+              <li>Ran CRM operations and competitive analysis feeding product and positioning decisions.</li>
             </ul>
           </div>
         </div>
@@ -653,94 +611,86 @@
         <!-- Role 5: Social Media Marketing Intern -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           <div class="lg:col-span-4">
-            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Aug 2019 — Feb 2020[cite: 6]</span>
-            <h3 class="text-xl font-bold text-neutral-900 mt-1">Social Media Marketing Intern[cite: 6]</h3>
-            <p class="text-sm text-neutral-600">The Learning Monks[cite: 6]</p>
+            <span class="text-xs font-mono uppercase tracking-wider text-neutral-500 font-medium">Aug 2019 — Feb 2020</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1">Social Media Marketing Intern</h3>
+            <p class="text-sm text-neutral-600">The Learning Monks</p>
           </div>
           <div class="lg:col-span-8">
             <ul class="space-y-3.5 text-sm sm:text-base text-neutral-700 leading-relaxed list-disc list-outside ml-4">
-              <li>Grew the social base by 50% in four months across a 1,500+ follower community[cite: 6].</li>
-              <li>Built the content and insights loop that raised profile visits by 65%[cite: 6].</li>
+              <li>Grew the social base by 50% in four months across a 1,500+ follower community.</li>
+              <li>Built the content and insights loop that raised profile visits by 65%.</li>
             </ul>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       EDUCATION & CREDENTIALS SECTION
-       ========================================================================= -->
+  <!-- EDUCATION & CREDENTIALS SECTION -->
   <section id="credentials" class="relative bg-[#f4f4f5] text-neutral-900 py-24 border-t border-neutral-200">
     <div class="absolute inset-0 grid-lines-light pointer-events-none"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
       <div class="max-w-2xl mb-14">
-        <span class="text-xs uppercase tracking-[0.2em] text-neutral-500 font-mono font-medium">BACKGROUND[cite: 7]</span>
+        <span class="text-xs uppercase tracking-[0.2em] text-neutral-500 font-mono font-medium">BACKGROUND</span>
         <h2 class="mt-2 text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
-          Education & Credentials[cite: 7]
+          Education & Credentials
         </h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8 border-t border-neutral-300">
-        
-        <!-- Left: Education -->
         <div class="lg:col-span-6 space-y-8">
           <div class="flex items-center gap-3 text-lg font-bold text-neutral-900">
             <i data-lucide="graduation-cap" class="w-5 h-5 text-neutral-700"></i>
-            <span>Education[cite: 7]</span>
+            <span>Education</span>
           </div>
 
           <div class="space-y-7 border-l-2 border-neutral-300 pl-6">
             <div>
-              <h4 class="text-base font-bold text-neutral-900">NMIMS (SVKM's Narsee Monjee Institute of Management Studies)[cite: 7]</h4>
-              <p class="text-sm text-neutral-600">MBA, Marketing[cite: 7]</p>
-              <span class="text-xs font-mono text-neutral-500">2026 — 2028[cite: 7]</span>
+              <h4 class="text-base font-bold text-neutral-900">NMIMS (SVKM's Narsee Monjee Institute of Management Studies)</h4>
+              <p class="text-sm text-neutral-600">MBA, Marketing</p>
+              <span class="text-xs font-mono text-neutral-500">2026 — 2028</span>
             </div>
 
             <div>
-              <h4 class="text-base font-bold text-neutral-900">MICA | The School of Ideas[cite: 7]</h4>
-              <p class="text-sm text-neutral-600">A to Z Digital Marketing Bootcamp[cite: 7]</p>
-              <span class="text-xs font-mono text-neutral-500">2024 — 2025[cite: 7]</span>
+              <h4 class="text-base font-bold text-neutral-900">MICA | The School of Ideas</h4>
+              <p class="text-sm text-neutral-600">A to Z Digital Marketing Bootcamp</p>
+              <span class="text-xs font-mono text-neutral-500">2024 — 2025</span>
             </div>
 
             <div>
-              <h4 class="text-base font-bold text-neutral-900">Kraftshala[cite: 7]</h4>
-              <p class="text-sm text-neutral-600">Marketing Launch Pad, Digital Media Marketing[cite: 7]</p>
-              <span class="text-xs font-mono text-neutral-500">2022[cite: 7]</span>
+              <h4 class="text-base font-bold text-neutral-900">Kraftshala</h4>
+              <p class="text-sm text-neutral-600">Marketing Launch Pad, Digital Media Marketing</p>
+              <span class="text-xs font-mono text-neutral-500">2022</span>
             </div>
 
             <div>
-              <h4 class="text-base font-bold text-neutral-900">Anna University, Chennai[cite: 7]</h4>
-              <p class="text-sm text-neutral-600">B.Tech[cite: 7, 8]</p>
-              <span class="text-xs font-mono text-neutral-500">2015 — 2019[cite: 7, 8]</span>
+              <h4 class="text-base font-bold text-neutral-900">Anna University, Chennai</h4>
+              <p class="text-sm text-neutral-600">B.Tech</p>
+              <span class="text-xs font-mono text-neutral-500">2015 — 2019</span>
             </div>
           </div>
         </div>
 
-        <!-- Right: Certifications, Honors & Languages -->
         <div class="lg:col-span-6 space-y-10">
-          
           <div>
             <div class="flex items-center gap-3 text-lg font-bold text-neutral-900 mb-4">
               <i data-lucide="award" class="w-5 h-5 text-neutral-700"></i>
-              <span>Certifications[cite: 7]</span>
+              <span>Certifications</span>
             </div>
             <ul class="space-y-2 text-sm text-neutral-700">
               <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-neutral-500"></i>
-                Foundations of Project Management[cite: 7]
+                Foundations of Project Management
               </li>
               <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-neutral-500"></i>
-                Meta Blueprint Certified[cite: 7]
+                Meta Blueprint Certified
               </li>
               <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-neutral-500"></i>
-                Google Ads Search Certification[cite: 7]
+                Google Ads Search Certification
               </li>
             </ul>
           </div>
@@ -748,39 +698,33 @@
           <div>
             <div class="flex items-center gap-3 text-lg font-bold text-neutral-900 mb-4">
               <i data-lucide="bookmark" class="w-5 h-5 text-neutral-700"></i>
-              <span>Honors & Awards[cite: 7]</span>
+              <span>Honors & Awards</span>
             </div>
             <div class="space-y-2 text-sm text-neutral-700">
-              <p class="font-medium">Achiever Award (x2)[cite: 7]</p>
-              <p class="font-medium">Extra Mile Award (x2)[cite: 7]</p>
+              <p class="font-medium">Achiever Award (x2)</p>
+              <p class="font-medium">Extra Mile Award (x2)</p>
             </div>
           </div>
 
           <div>
             <div class="flex items-center gap-3 text-lg font-bold text-neutral-900 mb-4">
               <i data-lucide="languages" class="w-5 h-5 text-neutral-700"></i>
-              <span>Languages[cite: 7]</span>
+              <span>Languages</span>
             </div>
             <div class="space-y-1 text-sm text-neutral-700">
-              <p><span class="font-medium text-neutral-900">Malayalam</span> — Native[cite: 7]</p>
-              <p><span class="font-medium text-neutral-900">English</span> — Professional working proficiency[cite: 7, 8]</p>
-              <p><span class="font-medium text-neutral-900">Hindi</span> — Limited working proficiency[cite: 8]</p>
+              <p><span class="font-medium text-neutral-900">Malayalam</span> — Native</p>
+              <p><span class="font-medium text-neutral-900">English</span> — Professional working proficiency</p>
+              <p><span class="font-medium text-neutral-900">Hindi</span> — Limited working proficiency</p>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       NEWSLETTER & STRATEGY DISPATCH SECTION
-       ========================================================================= -->
+  <!-- NEWSLETTER & STRATEGY DISPATCH SECTION -->
   <section id="newsletter" class="relative bg-[#0c0c0e] text-neutral-100 py-24 border-t border-neutral-800">
     <div class="max-w-7xl mx-auto px-6">
-      
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div class="lg:col-span-5 space-y-6">
           <div>
@@ -872,42 +816,36 @@
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </button>
           </article>
-
         </div>
       </div>
-
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       CONTACT / "LET'S TALK" SECTION
-       ========================================================================= -->
+  <!-- CONTACT / "LET'S TALK" SECTION -->
   <section id="contact" class="relative bg-[#fafafa] text-neutral-900 py-28 border-t border-neutral-200">
     <div class="absolute inset-0 grid-lines-light pointer-events-none"></div>
 
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
-      
       <span class="inline-block bg-neutral-200/90 text-neutral-700 font-mono text-xs uppercase tracking-[0.25em] px-4 py-1.5 rounded-full mb-6">
-        LET'S TALK[cite: 8]
+        LET'S TALK
       </span>
 
       <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-900">
-        Open to opportunities and collaborations.[cite: 8]
+        Open to opportunities and collaborations.
       </h2>
 
       <p class="mt-5 text-base sm:text-lg text-neutral-600 max-w-xl mx-auto">
-        Reach out about brand asset management, media strategy, performance marketing or automation projects[cite: 8].
+        Reach out about brand asset management, media strategy, performance marketing or automation projects.
       </p>
 
       <div class="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-sm font-medium text-neutral-800">
-        <a href="mailto:sreeharia083@gmail.com" class="inline-flex items-center gap-2 hover:text-black transition">
+        <a href="mailto:sreeharia04@gmail.com" class="inline-flex items-center gap-2 hover:text-black transition">
           <i data-lucide="mail" class="w-4 h-4 text-neutral-600"></i>
-          <span>sreeharia083@gmail.com</span>[cite: 8]
+          <span>sreeharia04@gmail.com</span>
         </a>
-        <a href="tel:+917560803013" class="inline-flex items-center gap-2 hover:text-black transition">
-          <i data-lucide="phone" class="w-4 h-4 text-neutral-600"></i>
-          <span>+91 75608 03013</span>[cite: 8]
+        <a href="https://wa.me/917560803013" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-black transition">
+          <i data-lucide="message-square" class="w-4 h-4 text-emerald-600"></i>
+          <span>+91 75608 03013 (WhatsApp)</span>
         </a>
         <a href="https://www.linkedin.com/in/sreeharia04/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-black transition">
           <i data-lucide="linkedin" class="w-4 h-4 text-[#0077b5]"></i>
@@ -915,20 +853,18 @@
         </a>
       </div>
 
+      <!-- Action Button Connected Directly to WhatsApp -->
       <div class="mt-10">
-        <a href="mailto:sreeharia083@gmail.com" class="inline-flex items-center gap-2 bg-[#0c0c0e] text-white font-medium px-8 py-4 rounded-full text-sm hover:bg-neutral-800 transition shadow-xl">
-          <span>Send a message</span>[cite: 8]
+        <a href="https://wa.me/917560803013" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#0c0c0e] text-white font-medium px-8 py-4 rounded-full text-sm hover:bg-neutral-800 transition shadow-xl">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>Send a message via WhatsApp</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
       </div>
-
     </div>
   </section>
 
-
-  <!-- =========================================================================
-       FOOTER
-       ========================================================================= -->
+  <!-- FOOTER -->
   <footer class="bg-[#0c0c0e] text-neutral-400 py-10 border-t border-neutral-800 text-xs">
     <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p class="font-mono">&copy; 2026 Sreehari A. Designed with precision logic.</p>
@@ -940,10 +876,7 @@
     </div>
   </footer>
 
-
-  <!-- =========================================================================
-       MODALS & LIGHTBOX
-       ========================================================================= -->
+  <!-- MODALS & LIGHTBOX -->
   <div id="case-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center p-4 sm:p-6">
     <div class="bg-[#141418] border border-neutral-700 max-w-2xl w-full rounded-2xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto text-neutral-200 relative shadow-2xl">
       <button onclick="closeModal()" class="absolute top-6 right-6 text-neutral-400 hover:text-white">
@@ -967,14 +900,10 @@
     </div>
   </div>
 
-
-  <!-- =========================================================================
-       SCRIPTS
-       ========================================================================= -->
+  <!-- SCRIPTS -->
   <script>
     lucide.createIcons();
 
-    // Drawer Menu Logic
     const menuBtn = document.getElementById('menu-btn');
     const closeMenuBtn = document.getElementById('close-menu-btn');
     const drawerMenu = document.getElementById('drawer-menu');
@@ -998,7 +927,6 @@
     });
     navLinks.forEach(link => link.addEventListener('click', () => toggleMenu(false)));
 
-    // Case Studies Data Store
     const caseStudies = {
       'modal-case-1': {
         title: 'Enterprise Governance Across a $200M Global Ad Portfolio',
@@ -1055,7 +983,6 @@
       }
     };
 
-    // Strategy Memo Data Store
     const memoData = {
       'memo-1': {
         title: 'Streamlining Cross-Market Asset Pipelines: Bridging Global Strategy & Local Nuance',
